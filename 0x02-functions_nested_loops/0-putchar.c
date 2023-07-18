@@ -5,28 +5,17 @@
 * Return: Always 0 (Success)
 */
 
-void	_putstr(char *str)
+int	main(void)
 {
-	int	i;
+	int     i;
+	char	str[50];
 
+	str = "_putchar\n";
 	i = 0;
 	while (str[i])
 	{
 		_putchar(str[i]);
 		i++;
 	}
-}
-
-int	main(void)
-{
-	int     i;
-	char	str[] = "_putchar\n";
-
-        i = 0;
-        while (str[i])
-        {
-                _putchar(str[i]);
-                i++;
-        }
 	return (0);
 }
