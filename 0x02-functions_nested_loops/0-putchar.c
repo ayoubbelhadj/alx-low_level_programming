@@ -19,6 +19,14 @@ void	_putstr(char *str)
 
 int	main(void)
 {
-	_putstr("_putchar\n");
+	int     i;
+	char	str[] = "_putchar\n";
+
+        i = 0;
+        while (str[i])
+        {
+                _putchar(str[i]);
+                i++;
+        }
 	return (0);
 }
